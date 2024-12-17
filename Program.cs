@@ -63,99 +63,137 @@
 
 //Session3-
 
-int ages = 19;
-if(ages > 21)
-{
-    Console.WriteLine("Valid");
-}
-else if(ages > 18)
-{
-    Console.WriteLine("Valid with conditions");
-}
-else
-{
-    Console.WriteLine("Invalid");
-}
+//int ages = 19;
+//if(ages > 21)
+//{
+//    Console.WriteLine("Valid");
+//}
+//else if(ages > 18)
+//{
+//    Console.WriteLine("Valid with conditions");
+//}
+//else
+//{
+//    Console.WriteLine("Invalid");
+//}
 
-int day = 4;
-switch (day)
-{
-    case 1:
-        Console.WriteLine("Monday");
-        break;
-    case 2:
-        Console.WriteLine("Tuesday");
-        break;
-    case 3:
-        Console.WriteLine("Wednesday");
-        break;
-    case 4:
-        Console.WriteLine("Thursday");
-        break;
-    case 5:
-        Console.WriteLine("Friday");
-        break;
-    case 6:
-        Console.WriteLine("Saturday");
-        break;
-    case 7:
-        Console.WriteLine("Sunday");
-        break;
-    default:
-        Console.WriteLine("No Match");
-        break;
-}
-// Outputs "Thursday" (day 4)
+//int day = 4;
+//switch (day)
+//{
+//    case 1:
+//        Console.WriteLine("Monday");
+//        break;
+//    case 2:
+//        Console.WriteLine("Tuesday");
+//        break;
+//    case 3:
+//        Console.WriteLine("Wednesday");
+//        break;
+//    case 4:
+//        Console.WriteLine("Thursday");
+//        break;
+//    case 5:
+//        Console.WriteLine("Friday");
+//        break;
+//    case 6:
+//        Console.WriteLine("Saturday");
+//        break;
+//    case 7:
+//        Console.WriteLine("Sunday");
+//        break;
+//    default:
+//        Console.WriteLine("No Match");
+//        break;
+//}
+//// Outputs "Thursday" (day 4)
 
-int i = 0;
-while (i <= 5)
-{
-    Console.WriteLine(i);
-    i++;
-}
+//int i = 0;
+//while (i <= 5)
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
 
-int j = 6;
-do
-{
-    Console.WriteLine(j);
-}while (j <= 5);
+//int j = 6;
+//do
+//{
+//    Console.WriteLine(j);
+//}while (j <= 5);
 
-for(int x=0;x<=10;x++)
-{
-    Console.WriteLine(x);
-}
+//for(int x=0;x<=10;x++)
+//{
+//    Console.WriteLine(x);
+//}
 
-for(int y=1;y<=12;y++)
-{
-    if(y==4)
-    {
-        break;
-    }
-    Console.WriteLine(y);
-}
+//for(int y=1;y<=12;y++)
+//{
+//    if(y==4)
+//    {
+//        break;
+//    }
+//    Console.WriteLine(y);
+//}
 
-for (int z = 1; z <= 12; z++)
-{
-    if (z == 4)
-    {
-        continue;
-    }
-    Console.WriteLine(z);
-}
+//for (int z = 1; z <= 12; z++)
+//{
+//    if (z == 4)
+//    {
+//        continue;
+//    }
+//    Console.WriteLine(z);
+//}
 
-string[] cars = {"Suzuki","Hyundai","Tata","Audi"};
-Console.WriteLine(cars[0]);
-Console.WriteLine(cars.Length);
-Array.Sort(cars);
-foreach(string car in cars)
-{
-    Console.WriteLine(car);
-}
+//string[] cars = {"Suzuki","Hyundai","Tata","Audi"};
+//Console.WriteLine(cars[0]);
+//Console.WriteLine(cars.Length);
+//Array.Sort(cars);
+//foreach(string car in cars)
+//{
+//    Console.WriteLine(car);
+//}
 
-int[] numArr = { 5, 1, 8, 9 };
-Console.WriteLine(numArr.Max());  // returns the largest value
-Console.WriteLine(numArr.Min());  // returns the smallest value
-Console.WriteLine(numArr.Sum());  // returns the sum of elements
+//int[] numArr = { 5, 1, 8, 9 };
+//Console.WriteLine(numArr.Max());  // returns the largest value
+//Console.WriteLine(numArr.Min());  // returns the smallest value
+//Console.WriteLine(numArr.Sum());  // returns the sum of elements
+
+//session4
+
+
+
+
+
+using TrainingApp;
+//object creation
+Car car=new Car();
+car.model="A5";
+car.brand = "Audi";
+car.year = "2024";
+car.StartCar();
+
+Car sportcar = new Car();
+car.model = "Mustang";
+car.brand = "Ford";
+car.year = "2024";
+car.StartCar();
+
+Person person = new Person();
+person.Name = "Mr. ABC";
+Console.WriteLine(person.Name); 
+
+Student student = new Student();
+student.Name = "PQR";
+Console.WriteLine(student.Name);
+
+Operations operations = new Operations();
+Console.WriteLine(operations.Addition(30,40));
+Console.WriteLine(Math.Round(operations.Addition(30.90,78.90)));
+
+
+
+
+
+
 
 
 
