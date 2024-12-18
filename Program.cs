@@ -165,33 +165,75 @@
 
 using TrainingApp;
 //object creation
-Car car=new Car();
-car.model="A5";
-car.brand = "Audi";
-car.year = "2024";
-car.StartCar();
+//Car car=new Car();
+//car.model="A5";
+//car.brand = "Audi";
+//car.year = "2024";
+//car.StartCar();
 
-Car sportcar = new Car();
-car.model = "Mustang";
-car.brand = "Ford";
-car.year = "2024";
-car.StartCar();
+//Car sportcar = new Car();
+//car.model = "Mustang";
+//car.brand = "Ford";
+//car.year = "2024";
+//car.StartCar();
 
-Person person = new Person();
-person.Name = "Mr. ABC";
-Console.WriteLine(person.Name); 
+//Person person = new Person();
+//person.Name = "Mr. ABC";
+//Console.WriteLine(person.Name); 
 
-Student student = new Student();
-student.Name = "PQR";
-Console.WriteLine(student.Name);
+//Student student = new Student();
+//student.Name = "PQR";
+//Console.WriteLine(student.Name);
 
-Operations operations = new Operations();
-Console.WriteLine(operations.Addition(30,40));
-Console.WriteLine(Math.Round(operations.Addition(30.90,78.90)));
+//Operations operations = new Operations();
+//Console.WriteLine(operations.Addition(30,40));
+//Console.WriteLine(Math.Round(operations.Addition(30.90,78.90)));
+
+//session 5
+
+Truck truck = new Truck();
+truck.Brand = "Ashok L" ;
+truck.Model = "6000";
+Console.WriteLine(truck.Brand + " " + truck.Model);
+truck.StartVehicle();
+
+Animal animal = new Animal();
+animal.AnimalSound();
+
+Tiger tiger = new Tiger();
+tiger.AnimalSound();
+
+Dog dog = new Dog();
+dog.AnimalSound();
+
+SalesStaff salesStaff = new SalesStaff();
+salesStaff.StaffJoining();
+salesStaff.LeaveApplication();
 
 
+Country country = new Country();
+country.AddCountry();
+country.RemoveCountry();
 
+Level level = Level.Medium;
+Console.WriteLine(level);
+Console.WriteLine((int)level);
 
+string writeText = "Hello World!";  // Create a text string
+File.WriteAllText("filename.txt", writeText);  // Create a file and write the contents of writeText to it
+
+string readText = File.ReadAllText("filename.txt"); // Read the contents of the file
+Console.WriteLine(readText); // Output the content
+
+try
+{
+    int[] myNumbers = { 1, 2, 3 };
+    Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
+}
 
 
 
