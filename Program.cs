@@ -163,7 +163,10 @@
 
 
 
+using System.Collections;
 using TrainingApp;
+using static TrainingApp.Operations;
+
 //object creation
 //Car car=new Car();
 //car.model="A5";
@@ -234,6 +237,58 @@ catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }
+
+//session6
+int i = 1;
+object o = i; // boxing  
+int j = (int)o; // unboxing  
+
+
+
+bool result = Operations.AreEqual<double>(3.89,6.78);
+Console.WriteLine(result);  
+
+ArrayList al = new ArrayList();
+al.Add("Test");
+al.Add(90);
+al.Add(DateTime.Parse("24-12-2024"));
+foreach(object item in al)
+{
+    Console.WriteLine(item);
+}
+
+List<int> lst = new List<int>();
+lst.Add(100);
+lst.Add(200);
+lst.Add(300);
+lst.Add(400);
+foreach (int listitem in lst)
+{
+    Console.WriteLine(listitem);
+
+}
+
+//delegate
+HelloFunctionDelegate del = new HelloFunctionDelegate(Hello);
+del("Testing");
+
+var course = "testing";
+Console.WriteLine(course);
+
+var marks = 900;
+Console.WriteLine(marks);
+
+dynamic dvar1 = "dynamci var";
+dynamic dvar2 = 89;
+Console.WriteLine(dvar1);
+Console.WriteLine(dvar2);
+
+//var var3 = "testing var";
+//var3 = 76;
+
+dynamic testd;
+testd = 8999;
+
 
 
 
